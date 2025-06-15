@@ -1,9 +1,23 @@
-# Problema-del-M-ximo-N-mero-de-Caballos-en-Ajedrez
+# 🏇 Máximo Número de Caballos en Ajedrez sin Ataques Mutuos
 
-## Descripción
-Este proyecto resuelve una variante del problema clásico de las reinas en ajedrez, utilizando caballos. El objetivo es encontrar el número máximo de caballos que pueden colocarse en un tablero de ajedrez de dimensión `N x N` sin que se amenacen mutuamente.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Algorithm](https://img.shields.io/badge/Algorithm-A*%20%26%20Branch%20&%20Bound-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-Este trabajo se desarrolló como parte de la asignatura de Inteligencia Artificial (IA), donde se aplican técnicas de exploración en espacios de estados para resolver problemas de optimización.
+## 📜 Descripción
+Implementación en Python de algoritmos de búsqueda (A* y Branch & Bound) para resolver el problema de colocar el máximo número de caballos en un tablero de ajedrez sin que se amenacen entre sí. Desarrollado como proyecto para la asignatura de Inteligencia Artificial.
 
-## Problema
-Dado un tablero de ajedrez de tamaño `N x N`, ¿cuál es el número máximo de caballos que se pueden colocar sin que se ataquen entre sí? Dos caballos se atacan si pueden moverse el uno al otro en un solo movimiento (en forma de "L").
+## 🎯 Problema Matemático
+Dado un tablero de M×N:
+- **Objetivo**: Maximizar el número de caballos (k)
+- **Restricción**: Ningún caballo puede atacar a otro
+- **Movimiento del caballo**: L (2 casillas en una dirección + 1 en perpendicular)
+
+## 🧠 Solución Implementada
+### Algoritmos Clave
+```python
+# Búsqueda con Branch & Bound
+search_horse_byb(initial_board)
+
+# Búsqueda con A*
+search_horse_astar(initial_board, heuristic_1|heuristic_2)
